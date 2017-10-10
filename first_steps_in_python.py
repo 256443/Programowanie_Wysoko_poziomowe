@@ -33,6 +33,6 @@ kwadrat = 7 ** 2
 szescian = 2 ** 3
 print kwadrat
 print szescian
-
+ 
 z1 = "witaj"
 z2 = "świecie"
