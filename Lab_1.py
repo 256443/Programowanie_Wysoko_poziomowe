@@ -50,47 +50,72 @@
 
 # ZADANIE 3
 #wydrukuj na ekranie alfabet w postaci mala litera ->duza litera
-import string
-print "Zadanie 3"
-
-for x in range(26):
-    print string.ascii_lowercase[x],
-    print string.ascii_uppercase[x],
+# import string
+# print "Zadanie 3"
+#
+# for x in range(26):
+#     print string.ascii_lowercase[x],
+#     print string.ascii_uppercase[x],
 
 #-------------------------------------------------------------------------
-
 # ZADANIE 4
 # Zmodyfikuj poprzedni program tak aby wyswietlał co n-ta litere z alfabetu.Liczbe n wprowadza uzytkownik
 
-# a=input('podaj liczbe: ')
-
-#pobierz od uzytkownika N liczb i wyswietl je posortowane. Uzytkownik wybiera kieunek sortowania praz zakres liczb ktore zostana wyswietlone na ekranie
-
-# zakres=input('podaj zakres: ')
-# ilosc=input('podaj ilosc cyfr: ')
-# kolejnosc = raw_input("podaj kolejnosc sortowania")
-# list = []
+# import string
+# print "Zadanie 3"
 #
+# liczba = input("Podaj co która litere mam wyswietlic")
+#
+# for x in range(26):
+#     if(x%liczba==0):
+#         print string.ascii_lowercase[x],
+#         print string.ascii_uppercase[x],
+
+#-------------------------------------------------------------------------
+
+# ZADANIE 5
+#pobierz od uzytkownika N liczb i wyswietl je posortowane. Uzytkownik wybiera kieunek sortowania
+# oraz zakres liczb ktore zostana wyswietlone na ekranie
+
+
+# ilosc=input('podaj ilosc cyfr: ')
+#
+# list = []
+# print "Wpisz teraz liczby które chcesz posortować"
 # for i in range(ilosc):
 #     liczba = input()
 #     list.append(liczba)
 #
+# zakres=input('podaj ile wyswietlic posortowanych cyfr (jesli podasz wiecej niz jest wszystkich cyfr, wyswietle wszystkie) :  ')
+# if(zakres>ilosc):
+#     zakres=ilosc
+#
+# kolejnosc = raw_input("wybierz kierunek sortowania: od_lewej lub od_prawej")
+#
 # if(kolejnosc=="od_lewej"):
 #     list.sort()
-#     for x in list:
-#         print x
+#     licznik=0
+#     while licznik<zakres:
+#         print list[licznik]
+#         licznik+=1
 # elif(kolejnosc=="od_prawej"):
 #     list.sort(reverse=ilosc)
-#     for x in list:
-#         print x
+#     licznik = 0
+#     while licznik<zakres:
+#         print list[licznik]
+#         licznik+=1
 # else:
 #     print "Bład w wyborze kolejnosc"
+#
+#-------------------------------------------------------------------------
 
+
+# ZADANIE 6
 #wyswietl ciag fibonacciego dla podanej ilosci
 
-# numbers =[0,1] #zdefiniuj dwa pierwsze wyrazy ciagu F(0) = 0, F(1) = 1
+# numbers =[0,1]
 # n_ty = raw_input("Do ktorego wyrazy mam wyswoetlic")
-# print "ile? : "+n_ty
+#
 # def fib(numbers):
 #     new = 0
 #     for i in range(int(n_ty)):
@@ -98,24 +123,26 @@ for x in range(26):
 #         numbers.append(new)
 #         print new
 #
-# # wywolaj funkcje
+#
 # fib(numbers)
 
+#-------------------------------------------------------------------------
+
+# ZADANIE 7
 # szyfr cezara
 # funkcja chr: Na przykład chr(97) zwróci napis 'a'
 # funkcja ord dziala odwrotnie do chr
 # 122 - jest to w asci = 'z'
-# KLUCZ = 4
-# def szyfruj(txt):
-#     zaszyfrowny = ""
-#     for i in range(len(txt)):
-#         if ord(txt[i]) > 122 - KLUCZ:
-#             zaszyfrowny += chr(ord(txt[i]) + KLUCZ - 21)
-#         else:
-#             zaszyfrowny += chr(ord(txt[i]) + KLUCZ)
-#     return zaszyfrowny
-#
-#
-#
-# tekst = raw_input("Podaj ciąg do zaszyfrowania:\n")
-# print szyfruj(tekst)
+KLUCZ = 3
+def szyfruj(txt):
+    zaszyfrowny = ""
+    for i in range(len(txt)):
+        if ord(txt[i]) > 122 - KLUCZ:
+            zaszyfrowny += chr(ord(txt[i]) + KLUCZ - 21)
+        else:
+            zaszyfrowny += chr(ord(txt[i]) + KLUCZ)
+    return zaszyfrowny
+
+
+tekst = raw_input("Podaj ciąg do zaszyfrowania:\n")
+print szyfruj(tekst)
