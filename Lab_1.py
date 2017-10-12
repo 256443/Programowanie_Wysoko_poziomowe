@@ -78,34 +78,35 @@
 # oraz zakres liczb ktore zostana wyswietlone na ekranie
 
 
-# ilosc=input('podaj ilosc cyfr: ')
-#
-# list = []
-# print "Wpisz teraz liczby które chcesz posortować"
-# for i in range(ilosc):
-#     liczba = input()
-#     list.append(liczba)
-#
-# zakres=input('podaj ile wyswietlic posortowanych cyfr (jesli podasz wiecej niz jest wszystkich cyfr, wyswietle wszystkie) :  ')
-# if(zakres>ilosc):
-#     zakres=ilosc
-#
-# kolejnosc = raw_input("wybierz kierunek sortowania: od_lewej lub od_prawej")
-#
-# if(kolejnosc=="od_lewej"):
-#     list.sort()
-#     licznik=0
-#     while licznik<zakres:
-#         print list[licznik]
-#         licznik+=1
-# elif(kolejnosc=="od_prawej"):
-#     list.sort(reverse=ilosc)
-#     licznik = 0
-#     while licznik<zakres:
-#         print list[licznik]
-#         licznik+=1
-# else:
-#     print "Bład w wyborze kolejnosc"
+ilosc=input('podaj ilosc cyfr: ')
+
+list = []
+print "Wpisz teraz liczby które chcesz posortować"
+for i in range(ilosc):
+    liczba = input()
+    list.append(liczba)
+
+zakres=input('podaj ile wyswietlic posortowanych cyfr (jesli podasz wiecej niz jest wszystkich cyfr, wyswietle wszystkie) :  ')
+if(zakres>ilosc):
+    zakres=ilosc
+
+kolejnosc = raw_input("wybierz kierunek sortowania: od_lewej lub od_prawej")
+
+try:
+    if(kolejnosc=="od_lewej"):
+        list.sort()
+        licznik=0
+        while licznik<zakres:
+            print list[licznik]
+            licznik+=1
+    elif(kolejnosc=="od_prawej"):
+        list.sort(reverse=ilosc)
+        licznik = 0
+        while licznik<zakres:
+            print list[licznik]
+            licznik+=1
+finally:
+        print "Bład w wyborze kierunku sortowania"
 #
 #-------------------------------------------------------------------------
 
@@ -133,16 +134,16 @@
 # funkcja chr: Na przykład chr(97) zwróci napis 'a'
 # funkcja ord dziala odwrotnie do chr
 # 122 - jest to w asci = 'z'
-KLUCZ = 3
-def szyfruj(txt):
-    zaszyfrowny = ""
-    for i in range(len(txt)):
-        if ord(txt[i]) > 122 - KLUCZ:
-            zaszyfrowny += chr(ord(txt[i]) + KLUCZ - 21)
-        else:
-            zaszyfrowny += chr(ord(txt[i]) + KLUCZ)
-    return zaszyfrowny
-
-
-tekst = raw_input("Podaj ciąg do zaszyfrowania:\n")
-print szyfruj(tekst)
+# KLUCZ = 3
+# def szyfruj(txt):
+#     zaszyfrowny = ""
+#     for i in range(len(txt)):
+#         if ord(txt[i]) > 122 - KLUCZ:
+#             zaszyfrowny += chr(ord(txt[i]) + KLUCZ - 21)
+#         else:
+#             zaszyfrowny += chr(ord(txt[i]) + KLUCZ)
+#     return zaszyfrowny
+#
+#
+# tekst = raw_input("Podaj ciąg do zaszyfrowania:\n")
+# print szyfruj(tekst)
