@@ -1,27 +1,65 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# def suma(a,b):
-#     return a+b
-#
+#-------------------------------------------------------------------------
+#ZADANIE 1:
+#pobierz imie i wiek, sprawdz czy jest pełnoletni
+
 # imie =  raw_input()
-# wiek = raw_input()
-# print "Czesc " + imie +" mam lat" +str(wiek)
-
-#Pobierz od uzytkownika 3 liczby i wyświetl najwieksza
-
-# a=input('podaj a: ')
-# b=input('podaj b: ')
-# c=input('podaj lc: ')
+# wiek = input()
 #
-# wczytane_dane = (a,b,c)
-# print "Wczytane dane to: a=%d, b=%d, c=%d" %wczytane_dane
+# def czyPelnoletni(wiek):
+#     if(wiek>18):
+#         print "Jestes pełnoletni"
+#     else:
+#         print "Nie jestes pełnoletni"
+#
+#
+# print "Czesc " + imie +", masz lat " +str(wiek)
+# czyPelnoletni(wiek)
 
-#wydrukuj na ekranie alfabet w mala litera ->duza litera
+#-------------------------------------------------------------------------
+
+#ZADANIE 2
+#Pobierz od uzytkownika 3 liczby i wyświetl najwieksza
+#
+#
+# def wys(*dane):
+#     for x in dane:
+#         print x
+#
+# def pobierz_liczby(licznik):
+#     dane = []
+#     for x in range(licznik):
+#         zmienna = input('podaj cyfre')
+#         dane.append(zmienna)
+#     return dane
+#
+# def znajdzMax(*dane):
+#     print "wartosc z tablicy z indexu 0 " +str(dane[0])
+#     maxx=dane[0]
+#     for x in dane:
+#         if(x>maxx):
+#             maxx=x
+#     print "Max wynois: "+str(maxx)
+
+# licznik = input("ile cyfr?")
+# wczytane_dane = pobierz_liczby(licznik)
+# wys(*wczytane_dane)
+# znajdzMax(*wczytane_dane)
+#-------------------------------------------------------------------------
+
+# ZADANIE 3
+#wydrukuj na ekranie alfabet w postaci mala litera ->duza litera
 import string
+print "Zadanie 3"
 
+for x in range(26):
+    print string.ascii_lowercase[x],
+    print string.ascii_uppercase[x],
 
-# print string.ascii_lowercase + string.ascii_uppercase
+#-------------------------------------------------------------------------
 
+# ZADANIE 4
 # Zmodyfikuj poprzedni program tak aby wyswietlał co n-ta litere z alfabetu.Liczbe n wprowadza uzytkownik
 
 # a=input('podaj liczbe: ')
@@ -67,17 +105,17 @@ import string
 # funkcja chr: Na przykład chr(97) zwróci napis 'a'
 # funkcja ord dziala odwrotnie do chr
 # 122 - jest to w asci = 'z'
-KLUCZ = 4
-def szyfruj(txt):
-    zaszyfrowny = ""
-    for i in range(len(txt)):
-        if ord(txt[i]) > 122 - KLUCZ:
-            zaszyfrowny += chr(ord(txt[i]) + KLUCZ - 21)
-        else:
-            zaszyfrowny += chr(ord(txt[i]) + KLUCZ)
-    return zaszyfrowny
-
-
-
-tekst = raw_input("Podaj ciąg do zaszyfrowania:\n")
-print szyfruj(tekst)
+# KLUCZ = 4
+# def szyfruj(txt):
+#     zaszyfrowny = ""
+#     for i in range(len(txt)):
+#         if ord(txt[i]) > 122 - KLUCZ:
+#             zaszyfrowny += chr(ord(txt[i]) + KLUCZ - 21)
+#         else:
+#             zaszyfrowny += chr(ord(txt[i]) + KLUCZ)
+#     return zaszyfrowny
+#
+#
+#
+# tekst = raw_input("Podaj ciąg do zaszyfrowania:\n")
+# print szyfruj(tekst)
