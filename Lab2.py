@@ -81,27 +81,26 @@
 
 # ----------------
 # zapisuje do listy reszte z dzielenia przez podana w funkcji locznej wartosc
-def logiczna(a):
-    return a % 10
-
-
-def fun(f, l):
-    lll = []
-    print "START: ", lll
-    for i in range(len(l)):
-        print i
-        z = f(l[i])
-        print "Sprawdzana cyfra: ", l[i]
-        print "wynik funkcji: ", z
-        lll.append(l[i])
-        lll.append(z)
-        print lll
-    return lll
-
-
-lista = [12, 14, 1, 56, 123, 32, 33, 14, 15, 161, 12]
-a = fun(logiczna, lista)
-print a
+# def logiczna(a):
+#     return a % 10
+#
+#
+# def fun(f, l):
+#     lll = []
+#     print "START: ", lll
+#     for i in range(len(l)):
+#         print i
+#         z = f(l[i])
+#         print "Sprawdzana cyfra: ", l[i]
+#         print "wynik funkcji: ", z
+#         lll.extend([l[i],z])
+#         print lll
+#     return lll
+#
+#
+# lista = [12, 14, 1, 56, 123, 32, 33, 14, 15, 161, 12]
+# a = fun(logiczna, lista)
+# print a
 # -------------------------
 
 
@@ -109,6 +108,31 @@ print a
 # Zadanie 5
 # zimplementuj funkcje która przyjmuje liste punktów na płaszczyznie w postaci krotek oraz punkt kontrolny
 # Funkcja ma zwrocic liste krotek w postaci (odlegolosc, punkty (x,y)) w kolejnosci od najblizszego do najdalszego  pomiedzy elementami z listy a punktem kontrolnym
+import math
+l=[(2,5), (3,2), (5,9)]
+k=[(5, 9)]
+print l
+print k
+
+def fun(punkty, kontrolny):
+    lista_wynikow=[]
+    Kx = kontrolny[0].__getitem__(0)
+    Ky = kontrolny[0].__getitem__(1)
+    print "Kx: ",Kx ," Ky: ",Ky
+    for x in range(len(punkty)):
+        Ax = punkty[x].__getitem__(0)
+        Ay = punkty[x].__getitem__(1)
+        print "Obliczam"
+        wynik = math.sqrt(((Kx-Ax)**2) + ((Ky - Ay)**2))
+        wynik = format("%.2f") % wynik
+        print wynik
+        lista_wynikow.append((Ax,Ay,wynik))
+    return lista_wynikow
+
+a=fun(l,k)
+print "Wyniki: "
+print a
+
 # ---------------
 
 
