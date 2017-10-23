@@ -15,45 +15,45 @@
 
 # Zadanie 2
 # Korzystajac z list skladanych napisz funkcje króra stworzy liste n elementów ciagu fibonacciego. Liczba n podawana jest w konsoli
-#wyswietl ciag fibonacciego dla podanej ilosci
+# wyswietl ciag fibonacciego dla podanej ilosci
 
-numbers =[0,1]
-lista = [0]
-def fib(numbers):
-    n=0;
-    s=numbers[0]
-    p=numbers[1]
-    x=input("Ile chcesz wyrazów ciagu: ")
-    for i in range(x-1):
-        n = s
-        s = s+p
-        p = n
-        lista.append(s)
-
-    print lista
-
-fib(numbers)
+# numbers =[0,1]
+# lista = [0]
+# def fib(numbers):
+#     n=0;
+#     s=numbers[0]
+#     p=numbers[1]
+#     x=input("Ile chcesz wyrazów ciagu: ")
+#     for i in range(x-1):
+#         n = s
+#         s = s+p
+#         p = n
+#         lista.append(s)
+#
+#     print lista
+#
+# fib(numbers)
 
 # Zadanie 3
 # Napisz generator do obliczenia ciagów fibonaacciego
 
-def fib():
-
-    p=0
-    n=1
-    yield p
-    yield n
-
-    while True:
-        t = p+n
-        p=n
-        n=t
-        yield n
-
-
-f=fib()
-for x in range(15):
-    print f.next(),
+# def fib():
+#
+#     p=0
+#     n=1
+#     yield p
+#     yield n
+#
+#     while True:
+#         t = p+n
+#         p=n
+#         n=t
+#         yield n
+#
+#
+# f=fib()
+# for x in range(15):
+#     print f.next(),
 
 
 # Zadanie 4
@@ -66,7 +66,7 @@ for x in range(15):
 # ret =pierwsze(10)
 # print(ret)
 # ----------------
-
+#
 # def flog(a):
 #     return a%3
 #
@@ -76,14 +76,32 @@ for x in range(15):
 #
 # print(ftest(flog,4))
 # print(ftest(flog,10))
-# ----------------
-# def logiczna(napis):
-#     if(len(napis)>5):
-#         return True
-#     return False
 
-# def fun(fun, *lista):
-#     napis = lis
+
+
+# ----------------
+# zapisuje do listy reszte z dzielenia przez podana w funkcji locznej wartosc
+def logiczna(a):
+    return a % 10
+
+
+def fun(f, l):
+    lll = []
+    print "START: ", lll
+    for i in range(len(l)):
+        print i
+        z = f(l[i])
+        print "Sprawdzana cyfra: ", l[i]
+        print "wynik funkcji: ", z
+        lll.append(l[i])
+        lll.append(z)
+        print lll
+    return lll
+
+
+lista = [12, 14, 1, 56, 123, 32, 33, 14, 15, 161, 12]
+a = fun(logiczna, lista)
+print a
 # -------------------------
 
 
@@ -129,4 +147,3 @@ for x in range(15):
 # Lambda
 # kwadrat = lambda x: x*x
 # print(kwadrat(2))
-
