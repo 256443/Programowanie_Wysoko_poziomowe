@@ -17,44 +17,44 @@
 # Korzystajac z list skladanych napisz funkcje króra stworzy liste n elementów ciagu fibonacciego. Liczba n podawana jest w konsoli
 #wyswietl ciag fibonacciego dla podanej ilosci
 
-# numbers =[0,1]
-# lista = []
-# def fib(numbers):
-#     n=0;
-#     s=numbers[0]
-#     p=numbers[1]
-#     x=input("Ile chcesz wyrazów ciagu: ")
-#     for i in range(x):
-#         n = s
-#         s = s+p
-#         p = n
-#         lista.append(s)
-#
-#     print lista
-#
-# fib(numbers)
+numbers =[0,1]
+lista = [0]
+def fib(numbers):
+    n=0;
+    s=numbers[0]
+    p=numbers[1]
+    x=input("Ile chcesz wyrazów ciagu: ")
+    for i in range(x-1):
+        n = s
+        s = s+p
+        p = n
+        lista.append(s)
+
+    print lista
+
+fib(numbers)
 
 # Zadanie 3
 # Napisz generator do obliczenia ciagów fibonaacciego
 
+def fib():
 
-# def fib():
-#
-#     p=0
-#     n=1
-#     yield p
-#     yield n
-#
-#     while True:
-#         t = p+n
-#         p=n
-#         n=t
-#         yield n
-#
-#
-# f=fib()
-# print (f.__next__)
-# print (f.__next__)
+    p=0
+    n=1
+    yield p
+    yield n
+
+    while True:
+        t = p+n
+        p=n
+        n=t
+        yield n
+
+
+f=fib()
+for x in range(15):
+    print f.next(),
+
 
 # Zadanie 4
 # zaimplementuj funkcje która w argumencie otrzymuje funkcje logiczna oraz liste i zwraca liste elementów spełniajacych warunek podany w przekazanej funkcji
