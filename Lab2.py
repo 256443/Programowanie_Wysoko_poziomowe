@@ -1,18 +1,17 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # Zadanie 1
-# korzystajac z list skladanych npisz funkcje która przyjmuje napisa i zwraca liste krotek w postaci (slowo, dlugosc slowa)
-# napis = 'Odwazny '
-# slowa = napis.split()
-# dlugosc_slow = [len(slowo) for slowo in slowa if slowo != 'nad']
-#
-# print (slowa + dlugosc_slow)
+# korzystajac z list skladanych npisz funkcje która przyjmuje napis i zwraca liste krotek w postaci (slowo, dlugosc slowa)
 
+def pobierz_napis():
+    napis = raw_input("Podaj napis: ")
+    slowa = napis.split()
+    dlugosc_slow = [len(slowo) for slowo in slowa]
+    x=len(slowa)
+    for i in range(x):
+        print str(slowa[i]), dlugosc_slow[i]
 
-# def pobierz_napis():
-#     napis = input("Podaj napis: ")
-#     krotka = (napis, len(napis))
-#     print("%s, %d" %krotka)
-#
-# pobierz_napis()
+pobierz_napis()
 
 # Zadanie 2
 # Korzystajac z list skladanych napisz funkcje króra stworzy liste n elementów ciagu fibonacciego. Liczba n podawana jest w konsoli
@@ -66,15 +65,15 @@
 # print(ret)
 # ----------------
 
-def flog(a):
-    return a%3
-
-def ftest (f,l):
-    # return f(l)
-    return [i for i in range(0,l+1) if f(i)]
-
-print(ftest(flog,4))
-print(ftest(flog,10))
+# def flog(a):
+#     return a%3
+#
+# def ftest (f,l):
+#     # return f(l)
+#     return [i for i in range(0,l+1) if f(i)]
+#
+# print(ftest(flog,4))
+# print(ftest(flog,10))
 # ----------------
 # def logiczna(napis):
 #     if(len(napis)>5):
