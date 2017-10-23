@@ -1,34 +1,36 @@
-#!/usr/bin/env python
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Zadanie 1
 # korzystajac z list skladanych npisz funkcje która przyjmuje napis i zwraca liste krotek w postaci (slowo, dlugosc slowa)
 
-def pobierz_napis():
-    napis = raw_input("Podaj napis: ")
-    slowa = napis.split()
-    dlugosc_slow = [len(slowo) for slowo in slowa]
-    x=len(slowa)
-    for i in range(x):
-        print str(slowa[i]), dlugosc_slow[i]
-
-pobierz_napis()
+# def pobierz_napis():
+#     napis = raw_input("Podaj napis: ")
+#     slowa = napis.split()
+#     dlugosc_slow = [len(slowo) for slowo in slowa]
+#     x=len(slowa)
+#     for i in range(x):
+#         print str(slowa[i]), dlugosc_slow[i]
+#
+# pobierz_napis()
 
 # Zadanie 2
 # Korzystajac z list skladanych napisz funkcje króra stworzy liste n elementów ciagu fibonacciego. Liczba n podawana jest w konsoli
-
 #wyswietl ciag fibonacciego dla podanej ilosci
 
-
 # numbers =[0,1]
-# n_ty = input("Do ktorego wyrazy mam wyswoetlic")
-#
+# lista = []
 # def fib(numbers):
-#     new = 0
-#     for i in range(int(n_ty)):
-#         new = numbers[-1] + numbers[-2]
-#         numbers.append(new)
-#         print (new)
+#     n=0;
+#     s=numbers[0]
+#     p=numbers[1]
+#     x=input("Ile chcesz wyrazów ciagu: ")
+#     for i in range(x):
+#         n = s
+#         s = s+p
+#         p = n
+#         lista.append(s)
 #
+#     print lista
 #
 # fib(numbers)
 
