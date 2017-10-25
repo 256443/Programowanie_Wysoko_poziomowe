@@ -52,6 +52,13 @@
 #
 # class Punkt3D(Punkt2D):
 
+# --------------------------------------------
+class Samochod:
+    def __init__(self,marka, pojemnoscBaku,predkoscMax,zuzyciePaliwa):
+        self.marka=marka
+        self.pojemnoscBaku = pojemnoscBaku
+        self.predkoscMax = predkoscMax
+        self.zuzyciePaliwa = zuzyciePaliwa
 
 
 
