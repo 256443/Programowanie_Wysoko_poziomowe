@@ -54,13 +54,75 @@
 
 # --------------------------------------------
 class Samochod:
+    __marka = None
+    __pojemnoscBaku = None
+    __predkoscMax = None
+    __zuzyciePaliwa = None
+
     def __init__(self,marka, pojemnoscBaku,predkoscMax,zuzyciePaliwa):
-        self.marka=marka
-        self.pojemnoscBaku = pojemnoscBaku
-        self.predkoscMax = predkoscMax
-        self.zuzyciePaliwa = zuzyciePaliwa
+        self.__marka = marka
+        self.__pojemnoscBaku = pojemnoscBaku
+        self.__predkoscMax = predkoscMax
+        self.__zuzyciePaliwa = zuzyciePaliwa
+# + dpisac do tego róznic z predkoscia
+    def ile_spali(self,odleglosc):
+        spalanie = odleglosc / 100.0 * self.__zuzyciePaliwa
+        print "W czasie tej  podrózy samochód spali: ", spalanie, "litry"
+
+    def jedz(self,predkosc, odleglosc):
+        czas = 0
+        # if (predkosc>self.__predkoscMax):
+        #     predkosc = self.__predkoscMax
+        print "odleglosc: ",odleglosc
+        print "predkosc: ",predkosc
+        czas = (float(predkosc) / float(odleglosc)) * 60
+        print "spodziewany czas podróży: ", czas, "minut"
+        # self.ile_spali(odleglosc)
+
+class Cabriolet(Samochod):
+
+    __otwarty_dach = None
+    def getMarka(self):
+        return self.__marka
+    def getPojemnoscBaku(self):
+        return self.__pojemnoscBaku
+    def getPredkoscMaxymalna(self):
+        return self.__predkoscMax
+    def getIleNaSto(self):
+        return self.__zuzyciePaliwa
+    def getDach(self):
+        return self.__otwarty_dach
+
+    # def jedz(self,predkosc, odleglosc):
+    #     czas = (float(predkosc) / float(odleglosc)) * 60
+    #     print czas
+
+    def __init__(self,marka, pojemnoscBaku,predkoscMax,zuzyciePaliwa,czyOtwart):
+        self.__marka = marka
+        self.__pojemnoscBaku = pojemnoscBaku
+        self.__predkoscMax = predkoscMax
+        self.__zuzyciePaliwa = zuzyciePaliwa
+        self.__otwarty_dach = czyOtwart
+
+    def zamknijDach(self):
+        print "Dach zamkniety"
+
+    def otworzDach(self):
+        if(self.__otwarty_dach==True):
+            print "Dach otwarty"
 
 
+
+osobowy = Samochod("mercedes",100, 80, 5)
+cabrio = Cabriolet("vw",100, 80, 5,True)
+
+osobowy.jedz(60, 60)
+cabrio.otworzDach()
+cabrio.zamknijDach()
+print cabrio.getIleNaSto()
+print cabrio.getMarka()
+cabrio.jedz(40,50)
+#
 
 # ------------------------------------------
 # Zadanie 3:
@@ -73,7 +135,7 @@ class Samochod:
 # funkcje publiczne:
 # konstruktor
 #
-# jedz(predkosc,odleglosc) wyswietlacjacą informacje o predkosci (nie wieksza niz max0),czasie podrózy zuzyciu paliwa oraz ile razy trzba bedzie tankowac
+# jedz(predkosc,odleglosc) wyswietlacjacą informacje o predkosci (nie wieksza niz max),czasie podrózy zuzyciu paliwa oraz ile razy trzba bedzie tankowac
 # jezeli samochód jedzie ponizej 30% lub powyzej 80% predkosci maxxx to zuzycie wzrasta o 20%
 #
 # Nastepnie zdefiniuj klasę kabriolet dziedziczac po samochodzie posiadajaca dodatkowe pola :
