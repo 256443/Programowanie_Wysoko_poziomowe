@@ -66,18 +66,32 @@ class Samochod:
         self.__zuzyciePaliwa = zuzyciePaliwa
 # + dpisac do tego róznic z predkoscia
     def ile_spali(self,odleglosc):
+
         spalanie = odleglosc / 100.0 * self.__zuzyciePaliwa
         print "W czasie tej  podrózy samochód spali: ", spalanie, "litry"
+        return spalanie
+
+    def ileRazyTankowac(self,spalanie,odleglosc):
+        tankowanie = (odleglosc / 100.0) * spalanie
+        return int((tankowanie / self.__pojemnoscBaku))
 
     def jedz(self,predkosc, odleglosc):
         czas = 0
-        # if (predkosc>self.__predkoscMax):
-        #     predkosc = self.__predkoscMax
+        if (predkosc>self.__predkoscMax):
+            predkosc = self.__predkoscMax
         print "odleglosc: ",odleglosc
         print "predkosc: ",predkosc
         czas = (float(predkosc) / float(odleglosc)) * 60
         print "spodziewany czas podróży: ", czas, "minut"
-        # self.ile_spali(odleglosc)
+        spalanie = self.ile_spali(odleglosc)
+        print spalanie, odleglosc
+
+        t = self.ileRazyTankowac(spalanie,odleglosc)
+        print "Musimy zatankować: %d razy" %t
+
+
+
+
 
 class Cabriolet(Samochod):
 
@@ -93,16 +107,13 @@ class Cabriolet(Samochod):
     def getDach(self):
         return self.__otwarty_dach
 
-    # def jedz(self,predkosc, odleglosc):
-    #     czas = (float(predkosc) / float(odleglosc)) * 60
-    #     print czas
-
     def __init__(self,marka, pojemnoscBaku,predkoscMax,zuzyciePaliwa,czyOtwart):
         self.__marka = marka
         self.__pojemnoscBaku = pojemnoscBaku
         self.__predkoscMax = predkoscMax
         self.__zuzyciePaliwa = zuzyciePaliwa
         self.__otwarty_dach = czyOtwart
+        Samochod.__init__(self,marka,pojemnoscBaku,predkoscMax,zuzyciePaliwa)
 
     def zamknijDach(self):
         print "Dach zamkniety"
@@ -110,18 +121,26 @@ class Cabriolet(Samochod):
     def otworzDach(self):
         if(self.__otwarty_dach==True):
             print "Dach otwarty"
+    def ile_spali(self,odleglosc):
+        if(self.__otwarty_dach == True):
+            print "spalanie przy otwartym dachu w cabrio"
+            spalanie = (odleglosc / 100.0 * self.__zuzyciePaliwa) * 1.15
+        else:
+            print "spalanie przy zamknietym dachu w cabrio"
+            spalanie = (odleglosc / 100.0 * self.__zuzyciePaliwa)
+        print "W czasie tej  podrózy samochód spali: ", spalanie, "litry"
+        return spalanie
 
 
-
-osobowy = Samochod("mercedes",100, 80, 5)
-cabrio = Cabriolet("vw",100, 80, 5,True)
+osobowy = Samochod("mercedes",30, 80, 5)
+cabrio = Cabriolet("vw",100, 80, 5,False)
 
 osobowy.jedz(60, 60)
 cabrio.otworzDach()
 cabrio.zamknijDach()
 print cabrio.getIleNaSto()
 print cabrio.getMarka()
-cabrio.jedz(40,50)
+cabrio.jedz(40,1050)
 #
 
 # ------------------------------------------
