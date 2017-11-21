@@ -1,1 +1,7 @@
-change 1 ala ma kota change 2 ala nie ma kota change 3 ale kot ma ale change 4 i a teraz nie ma kota ani ali
+change 1
+ala ma kota
+change 2 ala nie ma kota
+change 3
+ale kot ma ale
+change 4
+i a teraz nie ma kota ani ali
