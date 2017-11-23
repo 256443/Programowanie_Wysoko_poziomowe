@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e266bfec-8e6c-4db7-862a-dd3b9addbfef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Programowanie_Wysoko_poziomowe.iml" afterPath="$PROJECT_DIR$/.idea/Programowanie_Wysoko_poziomowe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab6.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab6_zadania.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab5_zadania.py" afterPath="$PROJECT_DIR$/Lab5_zadania.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start_in_git.txt" afterPath="$PROJECT_DIR$/start_in_git.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,51 +15,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Lab3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab3.py">
+      <file leaf-file-name="Lab6_zadania.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lab6_zadania.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zrodlo strony" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zrodlo strony">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="37" column="28" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="37" selection-end-column="28" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lab3_Zadania.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab3_Zadania.py">
+      <file leaf-file-name="Lab6.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="150" column="14" lean-forward="false" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lab5_zadania.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lab5_zadania.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lab5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lab2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="112" column="10" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="112" selection-end-column="10" />
+            <state relative-caret-position="158">
+              <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -91,6 +69,8 @@
         <option value="$PROJECT_DIR$/Lab3_Zadania.py" />
         <option value="$PROJECT_DIR$/start_in_git.txt" />
         <option value="$PROJECT_DIR$/Lab5_zadania.py" />
+        <option value="$PROJECT_DIR$/Lab6.py" />
+        <option value="$PROJECT_DIR$/Lab6_zadania.py" />
       </list>
     </option>
   </component>
@@ -116,8 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,10 +107,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="G:/antoszek/Programowanie_Wysoko_poziomowe/Lab6 Zadania.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -147,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Lab5_zadania">
+  <component name="RunManager" selected="Python.Lab6_zadania">
     <configuration name="Lab3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -199,7 +179,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Lab_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Lab6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -211,12 +191,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Programowanie_Wysoko_poziomowe" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lab_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lab6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="rownanie_kwadratowe" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Lab6_zadania" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -228,25 +208,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Programowanie_Wysoko_poziomowe" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rownanie_kwadratowe.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lab6_zadania.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.rownanie_kwadratowe" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Lab_1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Lab3" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Lab3_Zadania" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Lab5_zadania" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Lab3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Lab3_Zadania" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Lab5_zadania" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Lab6" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Lab6_zadania" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Lab5_zadania" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Lab3_Zadania" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Lab3" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Lab_1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.rownanie_kwadratowe" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Lab6_zadania" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Lab6" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Lab5_zadania" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Lab3_Zadania" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Lab3" />
       </list>
     </recent_temporary>
   </component>
@@ -265,17 +245,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11346999" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.50300753" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38485804" sideWeight="0.49699247" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38485804" sideWeight="0.49699247" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38012618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38012618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -294,6 +275,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Lab3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="28" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="37" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab3_Zadania.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="150" column="14" lean-forward="false" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="10" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="112" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5_zadania.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lab3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -431,6 +452,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/start_in_git.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5_zadania.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab3_Zadania.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="150" column="14" lean-forward="false" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/antoszek/Programowanie_Wysoko_poziomowe/Lab6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lab3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -439,34 +499,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab3_Zadania.py">
+    <entry file="file://G:/antoszek/Programowanie_Wysoko_poziomowe/Lab6 Zadania.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="150" column="14" lean-forward="false" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start_in_git.txt">
+    <entry file="file://$PROJECT_DIR$/Lab6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="158">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab5.py">
+    <entry file="file://$PROJECT_DIR$/zrodlo strony">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab5_zadania.py">
+    <entry file="file://$PROJECT_DIR$/Lab6_zadania.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="50">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
