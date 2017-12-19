@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+# Zadanie nr4 Gra kolko krzyżyk Antoszek Przemysła
 import string
 
 def createBoard():
@@ -120,7 +122,6 @@ def isDraw(symbol):
 
 def StartGame():
     print 'START'
-
     tabB,t = createBoard()
     printBoard(t)
     symbol = 1
@@ -136,11 +137,9 @@ def StartGame():
         printBoard(t)
         if(verificationWinner(t,'X')==True):
             return
-
         symbol+=1
         while(isDraw(symbol)):
             return
-
         print 'Gracz 2 -- O'
         wX = enterTheX()
         wY = enterTheY()
@@ -155,7 +154,6 @@ def StartGame():
         symbol += 1
         while (isDraw(symbol)):
             return
-
     print "Rozgrywka zakonczona remisem"
     return
 
